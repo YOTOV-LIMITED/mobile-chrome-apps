@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mobile-chrome-apps by YOTOV-LIMITED</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Mobile-chrome-apps</h1>
+      <h2 class="project-tagline">Chrome apps on Android and iOS</h2>
+      <a href="https://github.com/YOTOV-LIMITED/mobile-chrome-apps" class="btn">View on GitHub</a>
+      <a href="https://github.com/YOTOV-LIMITED/mobile-chrome-apps/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/YOTOV-LIMITED/mobile-chrome-apps/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="create-chrome-apps-for-mobile-using-apache-cordova" class="anchor" href="#create-chrome-apps-for-mobile-using-apache-cordova" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Create Chrome Apps for Mobile Using Apache Cordova</h1>
+
+<p>The Chrome Apps for Mobile Toolchain <em><strong>is no longer being actively developed</strong></em>. We intend to keep it functional, but do not intend on adding any new features.</p>
+
+<p><img src="docs/images/todomvc-chromebook.png" alt="A Chrome App running on both desktop and mobile"></p>
+
+<h2>
+<a id="overview" class="anchor" href="#overview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Overview</h2>
+
+<p>Chrome Apps for Mobile is a project based on Apache Cordova to run your <a href="https://developer.chrome.com/apps/about_apps">Chrome Apps</a> on both Android and iOS. The project provides a native application wrapper around your Chrome App, allowing you to distribute it via the Google Play Store and the Apple App Store. Cordova plugins give your App access to a wide range of APIs, including many of the core Chrome APIs. The newest version of Chrome Apps for Mobile includes Chrome APIs for <a href="https://developer.chrome.com/apps/identity">identity</a>, Google Cloud Messaging (<a href="https://developer.chrome.com/apps/gcm">GCM</a>) and <a href="https://developer.chrome.com/apps/notifications">rich notifications</a>.</p>
+
+<p>For an overview and demo of hybrid development, Chrome Apps for Mobile, and our Chrome App Developer Tool for Mobile, check out our Google I/O Bytes video.</p>
+
+<p><a href="http://www.youtube.com/watch?v=nU4lvgTrjFI"><img src="docs/images/io-byte-screenshot.png" alt="Chrome Apps on Android and iOS"></a></p>
+
+<h2>
+<a id="tools" class="anchor" href="#tools" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tools</h2>
+
+<p><img src="docs/images/cde-cadt-diagram.png" alt="Using CDE, cca, and CADT to develop Chrome Apps for Mobile"></p>
+
+<h3>
+<a id="the-cca-command-line-tool" class="anchor" href="#the-cca-command-line-tool" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://github.com/MobileChromeApps/mobile-chrome-apps/blob/master/docs/Installation.md#install-the-cca-command-line-tool">The <code>cca</code> Command Line Tool</a>
+</h3>
+
+<p><code>cca</code> provides all the functionality you need to develop and package Chrome Apps for Mobile from the command line. Use it with Chrome App Developer Tool (below) to rapidly iterate on your code: live deploy allows you to instantly see your Chrome App running on a connected mobile device. When you are ready to publish your Chrome App for Mobile to the Apple App Store and Google Play Store, use <code>cca</code> to bundle up your Chrome App into the proper mobile packages.</p>
+
+<h3>
+<a id="chrome-app-developer-tool-for-mobile-cadt" class="anchor" href="#chrome-app-developer-tool-for-mobile-cadt" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://github.com/MobileChromeApps/chrome-app-developer-tool/">Chrome App Developer Tool for Mobile (CADT)</a>
+</h3>
+
+<p>CADT is an app for your mobile development device that makes it quick and easy to see your code in action. It provides the Cordova framework of Chrome Apps for Mobile so you can test your code by simply pushing your Chrome App assets to your mobile device (made easy with our tools), which is must faster than packaging up the entire mobile app. This is called <strong>live deploy</strong>.</p>
+
+<p>With CADT running on your mobile device, live deploy can be initiated from your development computer with either Chrome Dev Editor or the <code>cca</code> command line tool, allowing you to instantly preview the Chrome App you're editing, running right on Android or iOS. When you make a change to the code in your editor, you're a quick push away from seeing it straight on your device.</p>
+
+<h3>
+<a id="chrome-dev-editor-cde" class="anchor" href="#chrome-dev-editor-cde" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://github.com/dart-lang/chromedeveditor">Chrome Dev Editor (CDE)</a>
+</h3>
+
+<p>CDE is an IDE built specifically for Chrome Apps. Use it with CADT for live deploy.</p>
+
+<h2>
+<a id="try-it-out" class="anchor" href="#try-it-out" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Try it out</h2>
+
+<p>Try out Chrome Apps for Mobile by following these steps:</p>
+
+<ul>
+<li><p><a href="https://github.com/MobileChromeApps/mobile-chrome-apps/blob/master/docs/Installation.md">Step 1: Install your development tools</a></p></li>
+<li><p><a href="https://github.com/MobileChromeApps/mobile-chrome-apps/blob/master/docs/CreateProject.md">Step 2: Create a project</a></p></li>
+<li><p><a href="https://github.com/MobileChromeApps/mobile-chrome-apps/blob/master/docs/Develop.md">Step 3: Develop</a></p></li>
+<li><p><a href="https://github.com/MobileChromeApps/mobile-chrome-apps/blob/master/docs/NextSteps.md">Step 4: Next Steps (Icons, etc)</a></p></li>
+<li><p><a href="https://github.com/MobileChromeApps/mobile-chrome-apps/blob/master/docs/Publish.md">Step 5: Publish</a></p></li>
+</ul>
+
+<p>It's also a good idea to go through our <a href="https://github.com/MobileChromeApps/workshop-cca-eh">codelab</a>, where you will learn to use <code>chrome.gcm</code> and <code>chrome.notifications</code> to build a simple chat app.</p>
+
+<h2>
+<a id="things-to-know" class="anchor" href="#things-to-know" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Things to Know</h2>
+
+<ul>
+<li><p>The Chrome Apps for Mobile project is built on top of <a href="http://cordova.apache.org">Apache Cordova</a>, the open source mobile development framework for building mobile apps with native capabilities using HTML, CSS and JavaScript.</p></li>
+<li><p><code>cca</code> projects <em>are</em> Cordova projects.</p></li>
+<li><p>By default, Chrome Apps built with <code>cca</code> use <a href="http://crosswalk-project.org/">Crosswalk</a>, (<a href="docs/Crosswalk.md">advantages and tradeoffs</a>).</p></li>
+<li><p>Most Cordova plugins that provide <code>chrome.*</code> APIs work with regular Cordova projects.</p></li>
+<li><p>There is a <a href="https://github.com/MobileChromeApps/mobile-chrome-apps/blob/master/docs/APIsAndLibraries.md">List of Chrome App APIs</a> that are supported on mobile.</p></li>
+<li><p>For even more, see the <a href="https://github.com/MobileChromeApps/mobile-chrome-apps/blob/master/docs/faq.md">FAQ</a>.</p></li>
+</ul>
+
+<h2>
+<a id="lets-get-started" class="anchor" href="#lets-get-started" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Let's get started</h2>
+
+<p><em><strong>Continue to <a href="https://github.com/MobileChromeApps/mobile-chrome-apps/blob/master/docs/Installation.md">Step 1: Install your development tools »</a></strong></em></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/YOTOV-LIMITED/mobile-chrome-apps">Mobile-chrome-apps</a> is maintained by <a href="https://github.com/YOTOV-LIMITED">YOTOV-LIMITED</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-74176915-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
